@@ -1,0 +1,36 @@
+@import "config";
+@import "nav";
+@import "home";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+//Headings
+h1,
+h2,
+h3 {
+  font-weight: 400;
+
+  &.heading-lg {
+    font-size: 6rem;
+  }
+  &.heading-sm {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
+  }
+}
+
+//Text
+.text-secondary {
+  color: $secondary-color;
+}
+
+//Lists
+ul {
+  list-style: none;
+}

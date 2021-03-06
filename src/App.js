@@ -1,7 +1,11 @@
+import { Home, NavBar } from './Components';
 const App = () =>
 {
     return(
-        <div></div>
+        <div>
+            <NavBar />
+            <Home />
+        </div>
     )
 }
 

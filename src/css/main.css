@@ -1,0 +1,77 @@
+.nav-list-container {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.8rem 1rem;
+  color: #fff;
+}
+.nav-list {
+  display: flex;
+  flex-flow: row wrap;
+}
+.nav-item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.nav-link:hover {
+  color: #1dacff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+}
+.nav-black {
+  background: #000;
+  color: #fff;
+}
+
+section#home {
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/laptopcode.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  line-height: 1.5;
+}
+section#home h1 {
+  margin-top: 20vh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+h1.heading-lg,
+h2.heading-lg,
+h3.heading-lg {
+  font-size: 6rem;
+}
+h1.heading-sm,
+h2.heading-sm,
+h3.heading-sm {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  background: rgba(5, 5, 5, 0.5);
+}
+
+.text-secondary {
+  color: #1dacff;
+}
+
+ul {
+  list-style: none;
+}
+
+/*# sourceMappingURL=main.css.map */

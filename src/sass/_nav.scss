@@ -1,0 +1,33 @@
+.nav {
+  &-list-container {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.8rem 1rem;
+    color: set-text-color($primary-color);
+  }
+  &-list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &-item {
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+  &-link {
+    &:hover {
+      color: $secondary-color;
+      cursor: pointer;
+      font-weight: 600;
+      @include easeInOut;
+    }
+  }
+  &-black {
+    background: $primary-color;
+    color: set-text-color($primary-color);
+  }
+}
