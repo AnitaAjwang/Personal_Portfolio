@@ -1,0 +1,26 @@
+#about {
+  color: set-text-color($accent-color);
+}
+
+.about {
+  &-grid {
+    display: grid;
+    padding-top: 1rem;
+    row-gap: 30px;
+    column-gap: 30px;
+    grid-template-areas: "bioimage bio bio";
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &-image {
+    grid-area: bioimage;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+  }
+  &-bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,76 @@
+.skills {
+  &-grid {
+    display: grid;
+    padding: 1rem;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "skill1 skill2 skill3";
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &-1 {
+    grid-area: skill1;
+  }
+  &-2 {
+    grid-area: skill2;
+  }
+  &-3 {
+    grid-area: skill3;
+  }
+  &-img {
+    height: 50px;
+    width: 50px;
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    &:hover {
+      cursor: pointer;
+      transition: 2.5s; /* Transition duration */
+      transform: scale(1.09);
+      -o-transform: rotate(720deg);
+      -ms-transform: rotate(720deg);
+      -moz-transform: rotate(720deg);
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+  }
+  &-Image {
+    @include set-circle-background;
+    margin-left: 100px;
+    object-fit: contain;
+  }
+  &-title {
+    margin-bottom: 10px;
+  }
+  &-row {
+    display: grid;
+    row-gap: 0.7rem;
+    column-gap: 0.7rem;
+    padding: 0 1rem;
+    margin-top: 10px;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  &-technologies {
+    h2 {
+      padding: 0 1rem;
+      margin-top: 10px;
+    }
+  }
+
+  &-tech-img {
+    width: 60px;
+    height: 60px;
+    filter: grayscale(100%);
+    &:hover {
+      cursor: pointer;
+      filter: none;
+      transform: scale(1.09);
+      @include easeInOut;
+    }
+  }
+}
+.skill {
+  background: lighten($primary-color, 30);
+  padding: 0.5rem;
+  border-bottom: $secondary-color 5px solid;
+  color: set-text-color($primary-color);
+}

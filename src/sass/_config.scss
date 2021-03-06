@@ -1,5 +1,6 @@
 $primary-color: #000;
 $secondary-color: #1dacff;
+$accent-color: #fff;
 $home-image: url(../images/laptopcode.jpg);
 $background-opacity: 0.9;
 
@@ -19,6 +20,13 @@ $background-opacity: 0.9;
   } @else {
     @return #fff;
   }
+}
+@mixin set-circle-background {
+  background-color: $secondary-color;
+  padding: 70px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 //Media Query Mixins

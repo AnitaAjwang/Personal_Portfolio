@@ -25,7 +25,7 @@ const NavBar = () => {
     //     setClick(!click);
     // }
     return (
-        <section>
+       
             <nav className={`nav ${show && "nav-black"}`}>
                 <div className="nav-list-container">
                 <h1 className="logo">Anita Ajwang</h1>
@@ -39,7 +39,7 @@ const NavBar = () => {
                 </div>
             </nav>
 
-        </section>
+        
     )
 }
 export default NavBar;
