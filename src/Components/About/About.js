@@ -19,7 +19,7 @@ const About = () => {
                 <div className="about-bio">
                     <p>{paragraphOne}</p>
                     <p>{paragraphTwo}
-                        <span className="about-languages">{languages}</span>
+                        <span className="text-secondary">{languages}</span>
                         <span>{partThree}</span></p>
                     <p>{paragraphThree}</p>
                     <p>{paragraphFour}</p>

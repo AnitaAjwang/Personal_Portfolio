@@ -68,6 +68,11 @@ export const SkillsData =[
     ]
 export const SkillsImages = [{
         id:nanoid(),
+        Tech:'REACT',
+        TechImg:'images/skills/react.png',
+    },
+    {
+        id:nanoid(),
         Tech:'HTML',
         TechImg:'images/skills/html.png',
     },

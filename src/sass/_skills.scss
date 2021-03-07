@@ -19,18 +19,12 @@
   &-img {
     height: 50px;
     width: 50px;
-    margin-left: 150px;
+    margin-left: 180px;
     margin-top: 10px;
     margin-bottom: 5px;
     &:hover {
       cursor: pointer;
-      transition: 2.5s; /* Transition duration */
-      transform: scale(1.09);
-      -o-transform: rotate(720deg);
-      -ms-transform: rotate(720deg);
-      -moz-transform: rotate(720deg);
-      -webkit-transform: rotate(720deg);
-      transform: rotate(720deg);
+      @include rotate-image;
     }
   }
   &-Image {
@@ -64,12 +58,12 @@
       cursor: pointer;
       filter: none;
       transform: scale(1.09);
-      @include easeInOut;
+      @include rotate-image;
     }
   }
 }
 .skill {
-  background: lighten($primary-color, 30);
+  background: lighten($primary-color, 10);
   padding: 0.5rem;
   border-bottom: $secondary-color 5px solid;
   color: set-text-color($primary-color);

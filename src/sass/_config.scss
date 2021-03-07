@@ -1,6 +1,7 @@
 $primary-color: #000;
 $secondary-color: #1dacff;
 $accent-color: #fff;
+$accent-color-dark: #444;
 $home-image: url(../images/laptopcode.jpg);
 $background-opacity: 0.9;
 
@@ -27,6 +28,15 @@ $background-opacity: 0.9;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+@mixin rotate-image {
+  transition: 2.5s; /* Transition duration */
+  transform: scale(1.09);
+  -o-transform: rotate(720deg);
+  -ms-transform: rotate(720deg);
+  -moz-transform: rotate(720deg);
+  -webkit-transform: rotate(720deg);
+  transform: rotate(720deg);
 }
 
 //Media Query Mixins

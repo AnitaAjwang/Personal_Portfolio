@@ -3,6 +3,9 @@
 @import "home";
 @import "about";
 @import "skills";
+@import "projects";
+@import "contact";
+@import "responsive";
 
 * {
   box-sizing: border-box;
@@ -15,10 +18,16 @@ body {
 h1,
 h2,
 h3 {
-  font-weight: 400;
+  text-align: center;
+  font-weight: 300;
 
-  &.heading-lg {
+  &.lg-heading {
     font-size: 6rem;
+    font-weight: 400;
+  }
+  &.heading-lg {
+    font-size: 4rem;
+    text-transform: uppercase;
   }
   &.heading-sm {
     margin-bottom: 2rem;
@@ -33,15 +42,25 @@ h3 {
 }
 //sections
 section {
-  height: 100vh;
+  min-height: 100vh;
   &#about,
-  &#skills {
+  &#skills,
+  &#projects {
     padding-top: 50px;
     background: $accent-color;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 //Lists
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+h4 {
+  text-align: center;
 }

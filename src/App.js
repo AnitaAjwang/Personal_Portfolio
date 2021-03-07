@@ -1,4 +1,4 @@
-import { Home, NavBar, About,Skills,Projects } from './Components';
+import { Home, NavBar, About,Skills,Projects,Contact } from './Components';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 const App = () =>
 {
@@ -10,6 +10,7 @@ const App = () =>
             <About />
             <Skills />
             <Projects />
+            <Contact />
             </Router>
         </div>
     )
