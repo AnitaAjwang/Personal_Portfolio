@@ -37,11 +37,11 @@
   }
   &-row {
     display: grid;
-    row-gap: 0.7rem;
-    column-gap: 0.7rem;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
     padding: 0 1rem;
     margin-top: 10px;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
   }
   &-technologies {
     h2 {
@@ -59,6 +59,15 @@
       filter: none;
       transform: scale(1.09);
       @include rotate-image;
+    }
+  }
+  &-tech {
+    text-transform: capitalize;
+    display: none;
+  }
+  &-tech-container:hover {
+    .skills-tech {
+      display: block;
     }
   }
 }

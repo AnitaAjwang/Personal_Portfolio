@@ -1,4 +1,5 @@
 import {nanoid} from 'nanoid';
+
 /**--------------------------------------INTRO DATA------------------------------------------------------------------------ */
 export const IntroData = {
     firstName:'Anita ' ,
@@ -37,9 +38,9 @@ export const NavData = [
 export const AboutData = {
     paragraphOne:'I am a software developer with hands-on experience designing and developing applications using a range of technologies and programming languages.',
     paragraphTwo:'I primarily use ',
-    languages:'React, Node, MongoDB, Express, Python, SQL, MySQL, PHP, HTML, CSS and SASS ',
-    partThree:',but picking up a new framework or language is not a problem.',
-    paragraphThree:'I am comfortable developing on the frontend or backend. I aspire toward a career that will allow me to channel my creativity through crafting beautiful software and engaging experiences.',
+    languages:'React, Node, MongoDB, Express, SQL, MySQL, PHP, HTML, CSS, SASS, AJAX',
+    partThree:', but picking up a new framework or language is not a problem.',
+    paragraphThree:'I am comfortable developing on the frontend or backend. I aspire toward a career that will allow me to channel my creativity through crafting beautiful software and partcipating in engaging experiences.',
     paragraphFour:'I enjoy finding new and improved ways to create seamless user experiences using efficient, effective, and scalable technology.I aim to build software that is not only powerful under the hood, but also intuitive and pixel-perfect in its user interface and experience.',
 };
 /**--------------------------------------SKILLS DATA------------------------------------------------------------------------ */
@@ -48,7 +49,7 @@ export const SkillsData =[
         id:nanoid(),
         skillsImg:'https://raw.githubusercontent.com/AnitaAjwang/Developer-Portfolio/682c8bfe2da4d5091918d6aed30787b92900bd5b/images/web-programming.svg',
         skillsTitle:'Development',
-        skillsDescription:'With a strong background in computer science, I am passionate about web design and creation and interested in data science. I aim to write clean, readable code that others can use and use to build beautiful software as I advance as a developer.',
+        skillsDescription:'With a strong background in computer science, I am passionate about web dvelopment and design and interested in data science. I aim to write clean, readable code that others can use to build beautiful software as I advance as a developer.',
         cName:'skills-1',
     },
     {
@@ -113,13 +114,23 @@ export const SkillsImages = [{
     },
     {
         id:nanoid(),
+        Tech:'git',
+        TechImg:'images/skills/git.png',
+    },
+    {
+        id:nanoid(),
         Tech:'Python',
         TechImg:'images/skills/python.png',
     },
     {
         id:nanoid(),
-        Tech:'JQuery',
-        TechImg:'images/skills/jquery.png',
+        Tech:'PHP',
+        TechImg:'images/skills/php.png',
+    },
+    {
+        id:nanoid(),
+        Tech:'AJAX',
+        TechImg:'images/skills/ajax.png',
     },
 
 ]
@@ -128,56 +139,68 @@ export const ProjectsData = [
 
     {
         id:nanoid(),
-        img:'https://raw.githubusercontent.com/AnitaAjwang/Developer-Portfolio/main/images/developer.png',
+        img:'images/projects/portfolio.PNG',
         projectName:'Personal Portfolio',
-        projectDescriptionOne:'',
-        projectDescriptionTwo:'',
+        projectDescriptionOne:'This is my personal portfolio. That I built using various technologies and learnt quite a lot while doing it',
+        projectDescriptionTwo:'React html css sass node',
         codeUrl:'',
-        liveUrl:'',
+        liveUrl:'https://portfolio-b5093.web.app/',
     },
 {
     id:nanoid(),
-    img:'https://raw.githubusercontent.com/AnitaAjwang/COVID-19-Tracker/main/images/covid.PNG',
+    img:'images/projects/covidtracker.PNG',
     projectName:'COVID-19 tracker',
-    projectDescriptionOne:'A web application that tracks the number of COVID-19 cases globally and country-based and visualizes the data. The data is fetched from an API.',
-    projectDescriptionTwo:'REACT  NODE  HTML  CSS  MATHDROID  API  MATERIAL UI',
+    projectDescriptionOne:'This tracks COVID-19 cases globally and country-based and visualizes the data. Live data is fetched using Async/Await syntax.',
+    projectDescriptionTwo:'REACT  NODE  HTML  CSS  MATHDROIDAPI  MATERIAL UI',
     codeUrl:'https://github.com/AnitaAjwang/COVID-19-Tracker',
     liveUrl:'https://covid-tracker-5fc43.web.app/',
 },
 {
     id:nanoid(),
-    img:'https://sproutvideo.com/blog/wp-content/uploads/2017/04/Blog_042517-1200x673.jpg',
+    img:'images/projects/moments.PNG',
     projectName:'Social Media App',
-    projectDescriptionOne:'',
-    projectDescriptionTwo:'',
-    codeUrl:'',
+    projectDescriptionOne:'This is application allows users to share events that happened in their lives. Async/Await syntax is used to perform CRUD functions',
+    projectDescriptionTwo:'mongodb express react node google-oauth axios',
+    codeUrl:'https://github.com/AnitaAjwang/Moments',
     liveUrl:'',
+},
+{
+    id:nanoid(),
+    img: 'images/projects/devportfolio.PNG',
+    projectName:'Portfolio Template',
+    projectDescriptionOne:'This is a responsive website portfolio template',
+    projectDescriptionTwo:'html css sass',
+    codeUrl:'https://github.com/AnitaAjwang/DevPortfolio',
+    liveUrl:'https://anitaajwang.github.io/DevPortfolio/',
 },
 {
     id:nanoid(),
     img:'https://raw.githubusercontent.com/AnitaAjwang/REST-API/main/images/restapi.png',
     projectName:'CRUD REST API',
     projectDescriptionOne:'This is a basic CRUD REST API that is built using Node, Express, MongoDB and Mongoose',
-    projectDescriptionTwo:'',
+    projectDescriptionTwo:'Node Express MongoDB Mongoose',
     codeUrl:'https://github.com/AnitaAjwang/REST-API',
     liveUrl:'https://github.com/AnitaAjwang/REST-API',
 },
 {
     id:nanoid(),
-    img: 'https://sproutvideo.com/blog/wp-content/uploads/2017/04/Blog_042517-1200x673.jpg',
-    projectName:'Weather Application',
-    projectDescriptionOne:'',
-    projectDescriptionTwo:'',
-    codeUrl:'',
+    img: 'images/projects/numbersmain.png',
+    projectName:'Numbers Facts',
+    projectDescriptionOne:'Application that fethches interesting facts from an API about numbers that a user enters',
+    projectDescriptionTwo:'html bootstrap ajax',
+    codeUrl:'https://github.com/AnitaAjwang/NumbersFacts',
     liveUrl:'',
 },
 {
     id:nanoid(),
-    img:'https://sproutvideo.com/blog/wp-content/uploads/2017/04/Blog_042517-1200x673.jpg',
-    projectName:'Expense Tracker',
-    projectDescriptionOne:'',
-    projectDescriptionTwo:'',
-    codeUrl:'',
-    liveUrl:'',
+    img:'images/projects/netflixlanding.png',
+    projectName:'Netflix Landing Page Clone',
+    projectDescriptionOne:'This a single page netflix clone that was created using reactjs and hosted using firebase. Live data is fetched using Async/Await syntax.',
+    projectDescriptionTwo:'react html css node tmdb-api firebase',
+    codeUrl:'https://github.com/AnitaAjwang/Netflix-clone',
+    liveUrl:'https://netflix-clone-63565.web.app/',
 },
-]
+];
+export const CodeUrl = {
+    gitUrl: 'https://github.com/AnitaAjwang',
+};

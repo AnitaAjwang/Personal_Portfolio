@@ -1,15 +1,28 @@
 import {AboutData} from '../../Data/data';
+import {useEffect } from 'react';
+import Fade from 'react-reveal/Fade';
 import '../../css/main.css';
 import about from '../../images/about.jpg';
 
-const About = () => {
+const About = ({isDesktop,setIsDesktop,isMobile,setIsMobile}) => {
     const {paragraphOne,paragraphTwo,paragraphThree,paragraphFour,languages,partThree} = AboutData;
+    useEffect(() => {
+        if(window.innerWidth > 769){
+            setIsDesktop(true);
+            setIsMobile(false);
+        }
+        else{
+            setIsDesktop(false);
+            setIsMobile(true);
+        }
+    }, []);
     return (
         <section id="about">
+             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px" >
             <div className="about-heading">
-                <h1 class="heading-lg">
+                <h1 className="heading-lg">
                 About
-                    <span class="text-secondary"> Me</span>
+                    <span className="text-secondary"> Me</span>
                 </h1>
                 <h2>Get To Know Me...</h2>
             </div>
@@ -25,7 +38,7 @@ const About = () => {
                     <p>{paragraphFour}</p>
                 </div>
             </div>
-            
+            </Fade> 
         </section>
     )
 }

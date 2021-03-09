@@ -1,9 +1,37 @@
-import useForm from '../../useForm';
 import '../../css/main.css';
-const Contact = () => {
-    const {handleChange, values,handleSubmit} = useForm();
+import {useEffect } from 'react';
+import Fade from 'react-reveal/Fade';
+import emailjs from 'emailjs-com';
+
+
+const Contact = ({isDesktop,setIsDesktop,isMobile,setIsMobile}) => {
+    
+    useEffect(() => {
+        if(window.innerWidth > 769){
+            setIsDesktop(true);
+            setIsMobile(false);
+        }
+        else{
+            setIsDesktop(false);
+            setIsMobile(true);
+        }
+    }, []);
+
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_0pe87o5', 'template_psrl92s', e.target, 'user_3KYfIri5HQufVN1caJL8a')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset();
+      }
+
     return (
         <section id="contact">
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px" >
         <div className="contact-wrapper">
         <div className="contact-background">
         <div className="contact-container">
@@ -34,32 +62,20 @@ const Contact = () => {
             </div>
             <div className="contact-screenBodyItemRight">
                 <div className="contact-formGroup">
-            <form className="contact-contactForm" onSubmit="handleSubmit">                 
+            <form className="contact-contactForm" onSubmit={sendEmail}>                 
 
                 <div className="contact-wrapInput">
-                    <input className="contact-formInput" 
-                    id="name"
-                    type="text" 
-                    name="name" 
-                    placeholder="Name"
-                    value={values.name}
-                    onChange={handleChange}
-                    />
+                    <input className="contact-formInput" type="text" name="name" placeholder="Name"/>
 
                 </div>
 
                 <div className="contact-wrapInput">
-                    <input className="contact-formInput" 
-                    id="email"
-                    type="email" 
-                    name="email"
-                    placeholder="Email" 
-                    value={values.email}
-                    onChange={handleChange}
-                    />
+                    <input className="contact-formInput" type="email" name="email" placeholder="Email"/>
                 
                 </div>
-
+                <div className="contact-wrapInput">
+                    <input className="contact-formInput" name="subject" placeholder="Subject" />
+                </div>
                 <div className="contact-wrapInput">
                     <textarea className="contact-formInput" name="message" placeholder="Message" />
                 </div>
@@ -77,7 +93,7 @@ const Contact = () => {
         </div>
         </div>
     </div>
-   
+    </Fade>
 </section>
     )
 }

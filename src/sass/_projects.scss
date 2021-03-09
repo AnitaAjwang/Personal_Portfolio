@@ -2,7 +2,7 @@
   &-card {
     background: lighten($accent-color, 30);
     padding: 0.5rem;
-    height: 65vh;
+    height: 70vh;
     border-bottom: $secondary-color 5px solid;
     color: set-text-color($accent-color);
     border-radius: 5px;
@@ -16,8 +16,18 @@
       border-bottom: $primary-color 5px solid;
     }
     &-content {
-      min-height: calc(65vh - 50px); //making the btns stick to the bottom
+      min-height: calc(70vh - 70px); //making the btns stick to the bottom
     }
+  }
+  &-title {
+    font-weight: bold;
+  }
+  &-languages {
+    height: 20px;
+    font-family: "Roboto Mono", sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: $secondary-color;
   }
   &-btns {
     height: 50px;
@@ -26,8 +36,24 @@
     justify-content: space-between;
     align-items: center;
   }
+  &-live,
+  &-github {
+    color: $primary-color;
+    font-size: 10px;
+    display: none;
+  }
 }
 .url-icon {
   font-size: 1.5rem;
   color: $primary-color;
+}
+.btn-light:hover {
+  p {
+    display: block;
+  }
+}
+.btn-dark:hover {
+  p {
+    display: block;
+  }
 }

@@ -85,3 +85,19 @@
     }
   }
 }
+@include mediaSm {
+  .projects {
+    &-card {
+      height: 68.5vh;
+    }
+    &-content {
+      min-height: calc(68.5vh - 45px); //making the btns stick to the bottom
+    }
+    &-btns {
+      height: 30px;
+    }
+    &-languages {
+      height: 15px;
+    }
+  }
+}
