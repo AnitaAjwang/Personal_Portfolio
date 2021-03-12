@@ -38,7 +38,7 @@ export const NavData = [
 export const AboutData = {
     paragraphOne:'I am a software developer with hands-on experience designing and developing applications using a range of technologies and programming languages.',
     paragraphTwo:'I primarily use ',
-    languages:'React, Node, MongoDB, Express, SQL, MySQL, PHP, HTML, CSS, SASS, AJAX',
+    languages:'React, Node, MongoDB, Express, SQL, MySQL, PHP, HTML, CSS, SASS, AJAX,JavaScript',
     partThree:', but picking up a new framework or language is not a problem.',
     paragraphThree:'I am comfortable developing on the frontend or backend. I aspire toward a career that will allow me to channel my creativity through crafting beautiful software and partcipating in engaging experiences.',
     paragraphFour:'I enjoy finding new and improved ways to create seamless user experiences using efficient, effective, and scalable technology.I aim to build software that is not only powerful under the hood, but also intuitive and pixel-perfect in its user interface and experience.',
@@ -119,8 +119,8 @@ export const SkillsImages = [{
     },
     {
         id:nanoid(),
-        Tech:'Python',
-        TechImg:'images/skills/python.png',
+        Tech:'JavaScript',
+        TechImg:'images/skills/js.png',
     },
     {
         id:nanoid(),
@@ -131,6 +131,11 @@ export const SkillsImages = [{
         id:nanoid(),
         Tech:'AJAX',
         TechImg:'images/skills/ajax.png',
+    },
+    {
+        id:nanoid(),
+        Tech:'JQUERY',
+        TechImg:'images/skills/jquery.png',
     },
 
 ]
@@ -143,8 +148,8 @@ export const ProjectsData = [
         projectName:'Personal Portfolio',
         projectDescriptionOne:'This is my personal portfolio. That I built using various technologies and learnt quite a lot while doing it',
         projectDescriptionTwo:'React html css sass node',
-        codeUrl:'',
-        liveUrl:'https://portfolio-b5093.web.app/',
+        codeUrl:'https://github.com/AnitaAjwang/Personal_Portfolio',
+        liveUrl:'https://anita-ajwang.web.app/',
     },
 {
     id:nanoid(),
@@ -184,7 +189,7 @@ export const ProjectsData = [
 },
 {
     id:nanoid(),
-    img: 'images/projects/numbersmain.png',
+    img: 'images/projects/numbersmain.PNG',
     projectName:'Numbers Facts',
     projectDescriptionOne:'Application that fethches interesting facts from an API about numbers that a user enters',
     projectDescriptionTwo:'html bootstrap ajax',
@@ -193,7 +198,7 @@ export const ProjectsData = [
 },
 {
     id:nanoid(),
-    img:'images/projects/netflixlanding.png',
+    img:'images/projects/netflixlanding.PNG',
     projectName:'Netflix Landing Page Clone',
     projectDescriptionOne:'This a single page netflix clone that was created using reactjs and hosted using firebase. Live data is fetched using Async/Await syntax.',
     projectDescriptionTwo:'react html css node tmdb-api firebase',

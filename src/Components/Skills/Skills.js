@@ -14,6 +14,7 @@ const Skills = ({isDesktop,setIsDesktop,isMobile,setIsMobile}) => {
             setIsDesktop(false);
             setIsMobile(true);
         }
+        
     }, []);
     return(
         <section id="skills">
