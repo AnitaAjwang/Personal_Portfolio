@@ -14,10 +14,10 @@ const Projects = ({isDesktop,setIsDesktop,isMobile,setIsMobile}) => {
         responsiveClass: true,
         nav: true,
         loop:true,
-        dots: false,
+        dots: true,
         autoplay: false,
-        navText: ["Prev", "Next"],
-        smartSpeed: 500,
+        //navText: ["Prev", "Next"],
+        smartSpeed: 300,
         responsive: {
             0: {
                 items: 1,
@@ -56,10 +56,10 @@ const Projects = ({isDesktop,setIsDesktop,isMobile,setIsMobile}) => {
                 <span className="text-secondary"> Projects</span>
             </h1>
             </div>
-            <h4 className="text-secondary">
-                <a href="https://github.com/AnitaAjwang/" target="_blank" rel="noopener noreferrer">View More Projects</a>
+            <h4>
+                <a href="https://github.com/AnitaAjwang/" target="_blank" rel="noopener noreferrer" className="text-secondary">View More Projects</a>
             </h4>
-            <OwlCarousel className="owl-theme" {...options} >
+            <OwlCarousel className="owl-carousel owl-theme" {...options} >
                 {ProjectsData.map(({id,img,projectName,projectDescriptionOne,projectDescriptionTwo,codeUrl,liveUrl})=>
                     <div className="projects-card" key={id}>
                         <div className="projects-card-content">

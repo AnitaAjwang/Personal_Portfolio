@@ -15,6 +15,9 @@
 body {
   font-family: "Lato", sans-serif;
 }
+a{
+  text-decoration: none;
+}
 //Headings
 h1,
 h2,
@@ -27,7 +30,8 @@ h3 {
     font-weight: 400;
   }
   &.heading-lg {
-    font-size: 4rem;
+    font-size: 2.5rem;
+    font-family: "Roboto Mono",sans-serif;
     text-transform: uppercase;
   }
   &.heading-sm {
@@ -64,4 +68,40 @@ a {
 }
 h4 {
   text-align: center;
+}
+//Owl Carousel
+.owl{
+  &-dots{
+  span{
+  width: 20px !important;
+  height: 20px !important;
+  }
+  button{
+      border: none !important;
+      outline: none !important;
+  }
+}
+  &-nav{
+      button{
+      border: none !important;
+      outline: none !important;
+      background: none !important;
+      }
+
+  }
+  &-next,&-prev{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-80%);
+      color: $secondary-color !important;
+      font-size: 90px !important;
+      font-weight: bolder !important;
+  }
+  &-prev{
+      left: 1%;
+  }
+  &-next{
+      right: 1%;
+  }
+
 }

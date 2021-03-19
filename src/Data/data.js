@@ -107,11 +107,7 @@ export const SkillsImages = [{
         Tech:'Express',
         TechImg:'images/skills/express.png',
     },
-    {
-        id:nanoid(),
-        Tech:'Github',
-        TechImg:'images/skills/github.png',
-    },
+
     {
         id:nanoid(),
         Tech:'git',
@@ -136,6 +132,11 @@ export const SkillsImages = [{
         id:nanoid(),
         Tech:'JQUERY',
         TechImg:'images/skills/jquery.png',
+    },
+    {
+        id:nanoid(),
+        Tech:'Figma',
+        TechImg:'images/skills/figma.jpg',
     },
 
 ]
@@ -164,8 +165,8 @@ export const ProjectsData = [
     id:nanoid(),
     img:'images/projects/moments.PNG',
     projectName:'Social Media App',
-    projectDescriptionOne:'This is application allows users to share events that happened in their lives. Async/Await syntax is used to perform CRUD functions',
-    projectDescriptionTwo:'mongodb express react node google-oauth axios',
+    projectDescriptionOne:'This is a full-stack application allows users to share events that happened in their lives. Async/Await syntax is used to perform CRUD functions',
+    projectDescriptionTwo:'mongodb redux react node google-oauth axios',
     codeUrl:'https://github.com/AnitaAjwang/Moments',
     liveUrl:'',
 },
@@ -205,7 +206,17 @@ export const ProjectsData = [
     codeUrl:'https://github.com/AnitaAjwang/Netflix-clone',
     liveUrl:'https://netflix-clone-63565.web.app/',
 },
+{
+    id:nanoid(),
+    img:'images/projects/restaurant1.PNG',
+    projectName:'Restaurant Template',
+    projectDescriptionOne:'A responsive restaurant template',
+    projectDescriptionTwo:'html css sass js',
+    codeUrl:'https://github.com/AnitaAjwang/Restaurant-Template',
+    liveUrl:'https://anitaajwang.github.io/Restaurant-Template/',
+},
 ];
+
 export const CodeUrl = {
     gitUrl: 'https://github.com/AnitaAjwang',
 };

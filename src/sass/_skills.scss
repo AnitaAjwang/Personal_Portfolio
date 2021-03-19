@@ -37,11 +37,11 @@
   }
   &-row {
     display: grid;
-    row-gap: 0.5rem;
+    row-gap: 0.2rem;
     column-gap: 0.5rem;
     padding: 0 1rem;
     margin-top: 10px;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
   }
   &-technologies {
     h2 {

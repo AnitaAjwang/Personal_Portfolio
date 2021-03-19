@@ -15,3 +15,18 @@
     margin-top: 20vh;
   }
 }
+.home{
+  &-button{
+    visibility: hidden;
+    font-family: "Roboto Mono", sans-serif;
+  }
+&-btn-heading{
+  color: set-text-color($primary-color);
+}
+&-btn-icon{
+  color: set-text-color($primary-color);
+}
+}
+.learn-more{
+  text-align: center;
+}
