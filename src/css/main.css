@@ -1,5 +1,5 @@
 .nav {
-  z-index: 99;
+  z-index: 2;
   position: fixed;
   padding: 0.7rem 1rem;
   width: 100%;
@@ -156,9 +156,10 @@
   display: grid;
   row-gap: 0.2rem;
   column-gap: 0.5rem;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
+  margin-left: 50px;
   margin-top: 10px;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 .skills-technologies h2 {
   padding: 0 1rem;
@@ -183,6 +184,7 @@
   transform: rotate(720deg);
 }
 .skills-tech {
+  font-size: 15px;
   text-transform: capitalize;
   display: none;
 }
@@ -417,13 +419,11 @@
   .hamburger {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .nav-list {
     position: fixed;
-    top: 8%;
+    top: 0;
     left: -100%;
     flex-flow: column wrap;
     align-items: center;
@@ -440,7 +440,7 @@
     left: 0%;
   }
   .nav-close {
-    left: -100%;
+    transform: rotate(180deg);
   }
   .nav-close .btn-line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
@@ -473,17 +473,26 @@
     grid-template-columns: repeat(1, 1fr);
     padding: 0 2rem;
   }
+  .skills-row {
+    display: grid;
+    row-gap: 0.2rem;
+    column-gap: 0.5rem;
+    padding: 0rem 1rem;
+    margin-left: 50px;
+    margin-top: 10px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 
   .contact-screen {
-    height: 47vh;
+    height: 48vh;
   }
 }
 @media screen and (max-width: 500px) {
   .projects-card {
-    height: 68.5vh;
+    height: 69vh;
   }
   .projects-content {
-    min-height: calc(68.5vh - 45px);
+    min-height: calc(69vh - 45px);
   }
   .projects-btns {
     height: 30px;
@@ -504,11 +513,12 @@
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
+  width: inherit;
   font-family: "Lato", sans-serif;
 }
 
@@ -549,6 +559,7 @@ h3.heading-sm {
 
 section {
   min-height: 100vh;
+  box-sizing: 100%;
 }
 section#about, section#skills, section#projects {
   padding-top: 50px;

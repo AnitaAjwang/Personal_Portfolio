@@ -39,9 +39,10 @@
     display: grid;
     row-gap: 0.2rem;
     column-gap: 0.5rem;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
+    margin-left: 50px;
     margin-top: 10px;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
   &-technologies {
     h2 {
@@ -62,6 +63,7 @@
     }
   }
   &-tech {
+    font-size: 15px;
     text-transform: capitalize;
     display: none;
   }

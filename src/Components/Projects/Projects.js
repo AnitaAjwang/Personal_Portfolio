@@ -1,7 +1,6 @@
 import '../../css/main.css';
 import {ProjectsData} from '../../Data/data';
 import {useEffect } from 'react';
-import {NotFound} from '../index';
 import Fade from 'react-reveal/Fade';
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";

@@ -7,13 +7,11 @@
   .hamburger {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   .nav {
     &-list {
       position: fixed;
-      top: 8%;
+      top: 0;
       left: -100%;
       flex-flow: column wrap;
       align-items: center;
@@ -31,7 +29,7 @@
       // transform: rotate(180deg);
     }
     &-close {
-      left: -100%;
+      transform: rotate(180deg);
       .btn-line {
         // Line 1 -rotate
         &:nth-child(1) {
@@ -78,20 +76,29 @@
       grid-template-columns: repeat(1, 1fr);
       padding: 0 2rem;
     }
+    &-row{
+      display: grid;
+      row-gap: 0.2rem;
+      column-gap: 0.5rem;
+      padding: 0rem 1rem;
+      margin-left: 50px;
+      margin-top: 10px;
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
   .contact {
     &-screen {
-      height: 47vh;
+      height: 48vh;
     }
   }
 }
 @include mediaSm {
   .projects {
     &-card {
-      height: 68.5vh;
+      height: 69vh;
     }
     &-content {
-      min-height: calc(68.5vh - 45px); //making the btns stick to the bottom
+      min-height: calc(69vh - 45px); //making the btns stick to the bottom
     }
     &-btns {
       height: 30px;

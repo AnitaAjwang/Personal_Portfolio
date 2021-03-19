@@ -38,7 +38,7 @@ export const NavData = [
 export const AboutData = {
     paragraphOne:'I am a software developer with hands-on experience designing and developing applications using a range of technologies and programming languages.',
     paragraphTwo:'I primarily use ',
-    languages:'React, Node, MongoDB, Express, SQL, MySQL, PHP, HTML, CSS, SASS, AJAX,JavaScript',
+    languages:'React, Node, MongoDB, Express, SQL, MySQL, PHP, JAVA, HTML, CSS, SASS, AJAX,JavaScript',
     partThree:', but picking up a new framework or language is not a problem.',
     paragraphThree:'I am comfortable developing on the frontend or backend. I aspire toward a career that will allow me to channel my creativity through crafting beautiful software and partcipating in engaging experiences.',
     paragraphFour:'I enjoy finding new and improved ways to create seamless user experiences using efficient, effective, and scalable technology.I aim to build software that is not only powerful under the hood, but also intuitive and pixel-perfect in its user interface and experience.',
@@ -104,8 +104,8 @@ export const SkillsImages = [{
     },
     {
         id:nanoid(),
-        Tech:'Express',
-        TechImg:'images/skills/express.png',
+        Tech:'Java',
+        TechImg:'images/skills/java.png',
     },
 
     {
@@ -133,6 +133,13 @@ export const SkillsImages = [{
         Tech:'JQUERY',
         TechImg:'images/skills/jquery.png',
     },
+
+    {
+        id:nanoid(),
+        Tech:'Express',
+        TechImg:'images/skills/express.png',
+    },
+    
     {
         id:nanoid(),
         Tech:'Figma',
@@ -157,7 +164,7 @@ export const ProjectsData = [
     img:'images/projects/covidtracker.PNG',
     projectName:'COVID-19 tracker',
     projectDescriptionOne:'This tracks COVID-19 cases globally and country-based and visualizes the data. Live data is fetched using Async/Await syntax.',
-    projectDescriptionTwo:'REACT  NODE  HTML  CSS  MATHDROIDAPI  MATERIAL UI',
+    projectDescriptionTwo:'REACT  NODE  HTML  CSS  MATHDROIDAPI',
     codeUrl:'https://github.com/AnitaAjwang/COVID-19-Tracker',
     liveUrl:'https://covid-tracker-5fc43.web.app/',
 },
